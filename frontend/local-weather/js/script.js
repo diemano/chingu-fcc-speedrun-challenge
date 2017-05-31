@@ -32,7 +32,16 @@ $(document).ready(function () {
                     var now = new Date();
                     var h = now.getHours();
                     var m = now.getMinutes();
-                    $('.horario').html(("0"+h).slice(-2)+":"+("0"+m).slice(-2));
+
+                    $('.horario').html(("0"+h).slice(-2)+"<span class='pisca'>:</span>"+("0"+m).slice(-2));
+                    $('.pisca').html(":");
+                    setTimeout(function () {
+                        $('.pisca').html(" ");
+                    }, 500);
+
+
+
+
                 }
             switch (data.weather[0].description){
                 case "clear sky":
