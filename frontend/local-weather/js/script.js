@@ -1,10 +1,9 @@
 $(document).ready(function () {
 
     if(navigator.geolocation){
-        var now = new Date();
-        var h = now.getHours();
-        var m = now.getMinutes();
         navigator.geolocation.getCurrentPosition(function(position){
+            var now = new Date();
+            var h = now.getHours();
             var lati = position.coords.latitude;
             var longi = position.coords.longitude;
             var api = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+lati+"&lon="+longi+"&appid=1039cb33d63eb371e635c7cd8c14cf9f";
@@ -28,6 +27,13 @@ $(document).ready(function () {
                 $('.temper').html(ctemp);
                 $('.tempChange').click(changeTempo);
 
+                var myVar = setInterval(function(){ myTimer() }, 1000);
+                function myTimer() {
+                    var now = new Date();
+                    var h = now.getHours();
+                    var m = now.getMinutes();
+                    $('.horario').html(("0"+h).slice(-2)+":"+("0"+m).slice(-2));
+                }
             switch (data.weather[0].description){
                 case "clear sky":
                     if(h>4&&h<18){
@@ -112,8 +118,12 @@ $(document).ready(function () {
                     break;
 
             }
+            $('title').text('Weather in '+ data.name);
             $('.textCity').html(data.name);
-            $('.horario').html(("0"+h).slice(-2)+":"+("0"+m).slice(-2));
+
+
+
+
         })
 
 
