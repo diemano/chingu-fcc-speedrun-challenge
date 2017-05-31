@@ -38,10 +38,6 @@ $(document).ready(function () {
                     setTimeout(function () {
                         $('.pisca').html(" ");
                     }, 500);
-
-
-
-
                 }
             switch (data.weather[0].description){
                 case "clear sky":
