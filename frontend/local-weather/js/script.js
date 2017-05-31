@@ -39,8 +39,9 @@ $(document).ready(function () {
                         $('.pisca').html(" ");
                     }, 500);
                 }
-            switch (data.weather[0].description){
-                case "clear sky":
+                var clima = data.weather[0].id;
+                switch (true){
+                case (clima==800):
                     if(h>4&&h<18){
                     $('body').css({"background-image":"url('assets/clear-sky-day.jpg')"});
                     $('.tempo').html("<i class='wi wi-day-sunny'></i>");
@@ -49,7 +50,7 @@ $(document).ready(function () {
                     $('.tempo').html("<i class='wi wi-night-clear'></i>");
                     }
                     break;
-                case "few clouds":
+                case (clima==801):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/few-clouds-day.jpg')"});
                         $('.tempo').html("<i class='wi wi-day-cloudy'></i>");
@@ -58,7 +59,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-night-alt-cloudy'></i>");
                     }
                     break;
-                case "scattered clouds":
+                case (clima==802):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/scattered-clouds-day.jpg')"});
                         $('.tempo').html("<i class='wi wi-cloud'></i>");
@@ -67,7 +68,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-cloud'></i>");
                     }
                     break;
-                case "broken clouds":
+                case (clima==803&&clima==804):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/broken-clouds-day.jpg')"});
                         $('.tempo').html("<i class='wi wi-cloudy'></i>");
@@ -76,7 +77,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-cloudy'></i>");
                     }
                     break;
-                case "shower rain":
+                case (clima>=511&&clima<531):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/shower-rain.jpg')"});
                         $('.tempo').html("<i class='wi wi-rain'></i>");
@@ -85,7 +86,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-rain'></i>");
                     }
                     break;
-                case "rain":
+                case (clima>=500&&clima<=504):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/rain.jpg')"});
                         $('.tempo').html("<i class='wi wi-day-hail'></i>");
@@ -94,7 +95,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-night-alt-rain'></i>");
                     }
                     break;
-                case "thunderstorm":
+                case (clima>=200&&clima<300):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/thunderstorm-day.jpg')"});
                         $('.tempo').html("<i class='wi wi-day-snow-thunderstorm'></i>");
@@ -103,7 +104,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-night-alt-snow-thunderstorm'></i>");
                     }
                     break;
-                case "snow":
+                case (clima>=600&&clima<700):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/snow.jpg')"});
                         $('.tempo').html("<i class='wi wi-day-snow'></i>");
@@ -112,7 +113,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-night-alt-snow'></i>");
                     }
                     break;
-                case "mist":
+                case (clima>=700&&clima<800):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/mist.jpg')"});
                         $('.tempo').html("<i class='wi wi-day-fog'></i>");
