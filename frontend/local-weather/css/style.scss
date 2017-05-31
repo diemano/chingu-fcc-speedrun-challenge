@@ -3,6 +3,13 @@
 body, html{
   font-family:"Helvetica 25 UltraLight";
   color: white;
+  background-size: 100%;
+}
+.conteudo{
+  text-shadow: #000 1px 1px 5px;
+}
+p{
+  text-shadow: #000 1px 1px 5px;
 }
 
 .conteudo{
@@ -75,8 +82,4 @@ h1{
 .rodape a{
   text-decoration: none;
   color: white;
-}
-.temp{
-  border:0px;
-  color:white;
 }
