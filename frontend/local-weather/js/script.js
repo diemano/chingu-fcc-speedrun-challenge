@@ -7,7 +7,7 @@ $(document).ready(function () {
         navigator.geolocation.getCurrentPosition(function(position){
             var lati = position.coords.latitude;
             var longi = position.coords.longitude;
-            var api = "http://api.openweathermap.org/data/2.5/weather?lat="+lati+"&lon="+longi+"&appid=1039cb33d63eb371e635c7cd8c14cf9f";
+            var api = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat="+lati+"&lon="+longi+"&appid=1039cb33d63eb371e635c7cd8c14cf9f";
             $.getJSON(api, function(data){
                 var ktemp = data.main.temp;
                 var ctemp = parseFloat(Math.round((ktemp-273) * 100) / 100).toFixed(2);
