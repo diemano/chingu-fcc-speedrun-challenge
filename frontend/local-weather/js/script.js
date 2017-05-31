@@ -9,7 +9,25 @@ $(document).ready(function () {
             var longi = position.coords.longitude;
             var api = "http://api.openweathermap.org/data/2.5/weather?lat="+lati+"&lon="+longi+"&appid=1039cb33d63eb371e635c7cd8c14cf9f";
             $.getJSON(api, function(data){
-            $('.temper').html(data.main.temp+" F");
+                var ktemp = data.main.temp;
+                var ctemp = parseFloat(Math.round((ktemp-273) * 100) / 100).toFixed(2);
+                var ftemp = ctemp*(9/5)+32;
+                var changeValue = false;
+                function changeTempo() {
+                    if(changeValue){
+                        $('.tempChange').html("<i class='wi wi-celsius'></i>");
+                        $('.temper').html(ctemp);
+                        changeValue = false;
+                    }else{
+                        $('.tempChange').html("<i class='wi wi-fahrenheit'></i>");
+                        $('.temper').html(ftemp);
+                        changeValue = true;
+                    }
+                }
+                $('.tempChange').html("<i class='wi wi-celsius'></i>");
+                $('.temper').html(ctemp);
+                $('.tempChange').click(changeTempo);
+
             switch (data.weather[0].description){
                 case "clear sky":
                     if(h>4&&h<18){
