@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 body, html {
   font-family: "Roboto";
-  color: "white";
+  color: white;
   background-size: 100%; }
 
 .conteudo {
@@ -73,6 +73,6 @@ h1 {
 
 .rodape a {
   text-decoration: none;
-  color: "white"; }
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
