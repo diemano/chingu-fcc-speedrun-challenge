@@ -1,0 +1,18 @@
+a{
+  text-decoration: none;
+}
+.inputSearch{
+  width: 100%;
+  height: auto;
+}
+.item-topico{
+  background: #ccc;
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.item-topico:hover{
+  background: #ddd;
+  border-left:4px solid #761c19;
+  padding: -10px;
+}
