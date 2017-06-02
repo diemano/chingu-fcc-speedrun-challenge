@@ -23,4 +23,9 @@ $(document).ready(function(){
             }
         });
     });
+    $('#searchTerm').keypress(function(e){
+        if(e.which == 13){
+            $('#search').click();
+        }
+    });
 });
