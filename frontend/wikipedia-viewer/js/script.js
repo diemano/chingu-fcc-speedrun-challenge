@@ -4,15 +4,17 @@
 $(document).ready(function(){
     $('#search').click(function(){
         var searchTerm = $('#searchTerm').val();
-        var url = 'https://en.wikipedia.org/w/api.php?action=opensearch&search='+searchTerm+'&format=json';
+        var url = 'https://pt.wikipedia.org/w/api.php?action=opensearch&search='+searchTerm+'&format=json';
 
         $.ajax({
             url: url,
             dataType: 'jsonp',
             success: function (data) {
                 $('#output').html("");
+                $('.result').html('Your search for "'+searchTerm+'" generated '+data[1].length+' results.');
+                $('body').css({"padding-top":"10px"});
                 for(var i = 0;i<data[1].length;i++){
-                    $('#output').prepend('<a href="'+data[3][i]+'"><li class="item-topico"><p>'+data[1][i]+'</p><p>'+data[2][i]+'</p></li></a>');
+                    $('#output').prepend('<li class="item-topico rounded animated slideInUp"><p><a class="itens" href="'+data[3][i]+'">'+data[1][i]+'</a></p><p>'+data[2][i]+'</p></li>');
                 }
 
             },
@@ -21,5 +23,4 @@ $(document).ready(function(){
             }
         });
     });
-
 });

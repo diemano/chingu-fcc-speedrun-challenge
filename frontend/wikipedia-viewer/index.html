@@ -9,20 +9,32 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
               integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
               crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
     </head>
     <body>
-        <div class="container">
-            <h1>Wikipedia Viewer</h1>
-            <h4>Search in Wikipedia Base anything!</h4>
+        <div class="container-fluid bg-white">
+            <div class="row zerar-margin">
+                <div class="col central">
+            <h1 class="display-3"><img src="assets/wikipedia-logo.png">viewer</h1>
+            <h6 class="espaco">Search in Wikipedia Base anything!</h6>
             <div class="searchBox row">
-                <div class="col-6"><input class="from control inputSearch" id="searchTerm"></div>
-                <div class="col"><button id="search" type="button" class="btn btn-primary">Pesquisar<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></button> </div>
+                <div class="col"><input class="inputSearch" id="searchTerm">
+                    <a href="#" id="search" class="btn btn-primary pesquisa">Search </a>
+                    <a href='https://en.wikipedia.org/wiki/Special:Random' target="_blank" class="btn btn-secondary">Random </a>
+                </div>
+                <div class="result"></div>
+                </div>
             </div>
-            <ul id="output">
+            </div>
+            <div class="container-fluid saida">
+                <ul id="output">
 
-            </ul>
+                </ul>
+            </div>
+
         </div>
+        <div class="rodape">developed by <a href="#">diemano</a> </div>
         <script
                 src="https://code.jquery.com/jquery-3.2.1.min.js"
                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
