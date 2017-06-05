@@ -14,4 +14,4 @@ The Design was make on Photoshop CC and implementated in HTML and CSS using WebS
 
 Follow my **<a href="https://github.com/diemano">GitHub</a>** or See my Pens on my **<a href="https://codepen.io/diemano/">profile at codepen.io</a>**
 
-**Diemano Nóbrega - All Rights Reserved**
+**by @diemano - All Rights Reserved**
