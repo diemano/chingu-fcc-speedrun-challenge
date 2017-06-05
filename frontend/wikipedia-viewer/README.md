@@ -12,4 +12,4 @@ This application was build using Javascript and Jquery.
 
 The Design was make on Photoshop CC and implementated in HTML and CSS using WebStorm.
 
-*Diemano Nóbrega - All Rights Reserved
+**Diemano Nóbrega - All Rights Reserved**
