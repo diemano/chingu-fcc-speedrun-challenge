@@ -1,13 +1,15 @@
 # Build a Random Quote Machine
 
-## Objective
+## Link of the app
 
-Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/ONjoLe/.
+https://htmlpreview.github.io/?https://github.com/diemano/chingu-fcc-speedrun-challenge/blob/master/frontend/random-quote-machine/index.html
 
-## Requirements
+## Language used
 
-* User Story: I can click a button to show me a new random quote.
+This application was build using Javascript and Jquery.
 
-* User Story: I can press a button to tweet out a quote.
+## Design
 
-## Notes
+The Design was make on Photoshop CC and implementated in HTML and CSS using WebStorm.
+
+**Diemano Nóbrega - All Rights Reserved**
