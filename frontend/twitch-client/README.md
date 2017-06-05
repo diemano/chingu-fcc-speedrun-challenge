@@ -1,21 +1,15 @@
-# Use the Twitchtv JSON API
+# Twitchtv JSON API
 
-## Objective
+## Link of the app
 
-Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/Myvqmo/.
+https://htmlpreview.github.io/?https://github.com/diemano/chingu-fcc-speedrun-challenge/blob/master/frontend/twitch-client/index.html
 
-## Requirements
+## Language used
 
-* User Story: I can see whether Free Code Camp is currently streaming on Twitch.tv.
+This application was build using Javascript and Jquery.
 
-* User Story: I can click the status output and be sent directly to the Free Code Camp's Twitch.tv channel.
+## Design
 
-* User Story: if a Twitch user is currently streaming, I can see additional details about what they are streaming.
+The Design was make on Photoshop CC and implementated in HTML and CSS using WebStorm.
 
-* User Story: I will see a placeholder notification if a streamer has closed their Twitch account (or the account never existed). You can verify this works by adding brunofin and comster404 to your array of Twitch streamers.
-
-**Hint:** Here's an array of the Twitch.tv usernames of people who regularly stream: ["ESL_SC2", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas"]
-
-**UPDATE:** Due to a change in conditions on API usage explained here Twitch.tv now requires an API key, but we've built a workaround. Use https://wind-bow.gomix.me/twitch-api instead of twitch's API base URL (i.e. https://api.twitch.tv/kraken ) and you'll still be able to get account information, without needing to sign up for an API key.
-
-## Notes
+**Diemano Nóbrega - All Rights Reserved**
