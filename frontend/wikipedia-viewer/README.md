@@ -1,19 +1,15 @@
-# Build a Wikipedia Viewer
+# Wikipedia Viewer
 
-## Objective
+## Link of the app
 
-Build an app that is functionally similar to this: https://codepen.io/FreeCodeCamp/full/wGqEga/.
+https://htmlpreview.github.io/?https://github.com/diemano/chingu-fcc-speedrun-challenge/blob/master/frontend/wikipedia-viewer/index.html
 
-## Requirements
+## Language used
 
-* User Story: I can search Wikipedia entries in a search box and see the resulting Wikipedia entries.
+This application was build using Javascript and Jquery.
 
-* User Story: I can click a button to see a random Wikipedia entry.
+## Design
 
-**Hint #1:** Here's a URL you can use to get a random Wikipedia article: https://en.wikipedia.org/wiki/Special:Random.
+The Design was make on Photoshop CC and implementated in HTML and CSS using WebStorm.
 
-**Hint #2:** Here's an entry on using Wikipedia's API: https://www.mediawiki.org/wiki/API:Main_page.
-
-**Hint #3:** Use this link to experiment with Wikipedia's API.
-
-## Notes
+*Diemano Nóbrega - All Rights Reserved
