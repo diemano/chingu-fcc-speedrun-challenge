@@ -68,7 +68,7 @@ $(document).ready(function () {
                         $('.tempo').html("<i class='wi wi-cloud'></i>");
                     }
                     break;
-                case (clima==803&&clima==804):
+                case (clima>=803&&clima<=804):
                     if(h>4&&h<18){
                         $('body').css({"background-image":"url('assets/broken-clouds-day.jpg')"});
                         $('.tempo').html("<i class='wi wi-cloudy'></i>");

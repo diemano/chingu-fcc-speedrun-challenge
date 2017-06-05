@@ -1,0 +1,140 @@
+body, html {
+  background-color: #ebacb1 !important;
+  font-family: Roboto;
+  font-size: 14px; }
+
+.corpo {
+  margin: 40px auto;
+  float: left; }
+
+.conteudo {
+  background-color: #fff;
+  margin-top: 30px;
+  width: 460px; }
+
+.canal {
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  margin: 0 !important;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  transition-property: background;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out; }
+
+.linkTitulo {
+  text-decoration: none;
+  color: #747679; }
+
+.linkTitulo:hover {
+  text-decoration: none;
+  color: #747679; }
+
+.linkTitulo:focus {
+  text-decoration: none;
+  color: #747679; }
+
+.linkTitulo:active {
+  text-decoration: none;
+  color: #747679; }
+
+.canal:hover {
+  background-color: #f3f3f3; }
+
+.desc {
+  line-height: 1;
+  color: #747679;
+  font-size: 12px; }
+
+.tituloCanal {
+  color: #747679;
+  margin: 0;
+  font-size: 22px; }
+
+.topo {
+  float: left;
+  margin-bottom: 20px; }
+
+.rodape {
+  float: left; }
+
+.inputSearch {
+  width: 400px;
+  height: 40px; }
+
+input.inputSearch {
+  background-image: url(../assets/lupa.png);
+  background-repeat: no-repeat;
+  background-position: 360px 8px;
+  border: 1px solid #73c9c9;
+  padding-left: 20px;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out; }
+
+.inputSearch:focus {
+  opacity: 0.5;
+  border: 1px solid #73c9c9; }
+
+.inputSearch:active {
+  opacity: 0.5;
+  border: 1px solid #73c9c9; }
+
+.stream {
+  padding-top: 15px; }
+
+.input-col {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.tamanho {
+  width: 460px; }
+
+.output {
+  padding-left: 0; }
+
+.onlineIcon {
+  background-color: #c7ebac;
+  border-radius: 10px;
+  border: 1px solid #c7ebac;
+  width: 35px !important;
+  text-align: center;
+  color: #59694c;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 2px 7px 5px;
+  transition-property: background-color color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out; }
+
+.onlineIcon:hover {
+  text-decoration: none;
+  background-color: #93b57a;
+  color: #fff;
+  border: 1px solid #93b57a; }
+
+.offlineIcon {
+  background-color: #eb837b;
+  border-radius: 10px;
+  border: 1px solid #eb837b;
+  width: 35px !important;
+  text-align: center;
+  color: #6b373a;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 2px 7px 5px;
+  transition-property: background-color color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out; }
+
+.offlineIcon:hover {
+  text-decoration: none;
+  background-color: #d6716b;
+  color: #fff;
+  border: 1px solid #d6716b; }
+
+.online {
+  padding-top: 25px; }
+
+/*# sourceMappingURL=style.css.map */
