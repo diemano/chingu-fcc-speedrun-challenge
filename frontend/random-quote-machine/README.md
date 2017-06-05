@@ -1,4 +1,4 @@
-# Build a Random Quote Machine
+# Random Quote Machine
 
 ## Link of the app
 
