@@ -104,7 +104,7 @@ input.inputSearch {
   font-size: 13px;
   font-weight: 500;
   padding: 2px 7px 5px;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out; }
 
@@ -124,7 +124,7 @@ input.inputSearch {
   font-size: 13px;
   font-weight: 500;
   padding: 2px 7px 5px;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 0.1s;
   transition-timing-function: ease-in-out; }
 
