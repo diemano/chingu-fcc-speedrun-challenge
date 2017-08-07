@@ -18,8 +18,8 @@ $(document).ready(function(){
                 }
 
             },
-            error: function (errorMessage) {
-                alert('error');
+            error: function (err) {
+                alert(err);
             }
         });
     });

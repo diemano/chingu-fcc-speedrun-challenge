@@ -27,8 +27,7 @@ $(document).ready(function () {
                 $('.temper').html(ctemp);
                 $('.tempChange').click(changeTempo);
 
-                var myVar = setInterval(function(){ myTimer() }, 1000);
-                function myTimer() {
+                (function myTimer() {
                     var now = new Date();
                     var h = now.getHours();
                     var m = now.getMinutes();
@@ -38,7 +37,7 @@ $(document).ready(function () {
                     setTimeout(function () {
                         $('.pisca').html(" ");
                     }, 500);
-                }
+                })();
                 var clima = data.weather[0].id;
                 switch (true){
                 case (clima==800):
